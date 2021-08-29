@@ -1,0 +1,7 @@
+---
+- hosts: linux
+  become: yes
+  remote_user: root888
+  tasks:
+          - name: Install Apache
+            yum: pkg=httpd state=absent

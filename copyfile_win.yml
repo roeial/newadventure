@@ -1,0 +1,6 @@
+---
+- name: Copy File
+  hosts: win
+  gather_facts: true
+  tasks:
+          - win_copy: src=/home/rootroei/test.txt dest=C:\

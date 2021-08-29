@@ -1,0 +1,12 @@
+---
+- hosts: linux
+  become: yes
+  remote_user: root888
+  tasks:
+          - name: copy file
+            copy: 
+                src: /home/rootroei/test.txt
+                dest: /home/root888
+                owner: root888
+                group: root888
+                mode: 777

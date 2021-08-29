@@ -1,0 +1,8 @@
+---
+- name: IIS Pool Stop
+  hosts: win
+  gather_facts: true
+  tasks:
+   - win_iis_webapppool:
+       name: "DefaultAppPool"
+       state: stopped
